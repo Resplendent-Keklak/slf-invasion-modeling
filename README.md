@@ -6,6 +6,10 @@ Navigating this repository (see next section) will allow you to look at the raw 
 
 The main contributors are not professional developers, so there are no guarantees that the code and data will make immediate sense to someone who uses high-level programming languages to process data or develop machine learning models. Users who attempt to replicate the results but find that reading data into the programs doesn't work should change the path of the data to match the path where it is added to your own device. If you cannot find the path to the data you desire, the documentation made in the `Deliverables` folder should help you. If this doesn't work, contact a main contributor.
 
+As an additional note, some data files had to be split into smaller files to fit within the file size upload limits set by GitHub. A file split into multiple smaller ones may not be represented in the code, which should be true for the following files:
+
+- `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines.csv` is split into `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines_Part_1.csv` and `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines_Part_2.csv`
+
 ## Navigating This Repository
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
 - `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
