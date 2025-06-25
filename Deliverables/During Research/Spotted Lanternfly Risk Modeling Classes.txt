@@ -1,0 +1,50 @@
+Spotted Lanternfly Risk Modeling Classes
+Erica Keklak | 2025-06-25
+----
+Each of the eight main models produced in this project uses a unique set of target values with different meanings although all are added into the training data as "apparently meaningless" integers. However, each classification model has its own meanings for each risk class. Each were assigned algorithmically using an assignment function in Python within one of the Jupyter Notebook files that took into account actual observed data, and almost all of these data are included as features of each model.
+
+"Evaluation times" refer to the current year at a certain data point where the target applies; for example, if a row in the training data lists 'year' as 2016 the target value applies to the risk/damage assessed that year. Some of the previous year's data is included because during feature selection a naive time series model was found to be useful in theory.
+
+Model training data does not include predictions for the years of 2025 and 2026 that were proposed. Instead, they will be displayed as results in other deliverables since they represent predictions rather than new, 100% accurate training data. If a contributor decides to take additional data for the years of 2025 and 2026 that are actual future observations, adding them to a fork of this repository's training data could be useful.
+----
+General Spotted Lanternfly Spread Risk Models:
+
+"0" or "Least Risk": No spotted lanternflies are expected to pass into the county or state from outside locations within the continental United States by the model's "evaluation time" (end of 2025 or end of 2026) and no spotted lanternflies were in the area for the previous year
+
+"1" or "Low Risk": In areas where spotted lanternflies were present for the previous year, the average population density within the area is expected to decline, stay the same, or increase by up to and including 100 individuals per square mile of "flat area" the area being evaluated occupies, measured by the end of the model's evaluation time
+
+"2" or "Moderate Risk": The expected average population density of spotted lanternflies is expected to increase by at least 101 individuals to 1,000 individuals, inclusive, per square mile of "flat area" the area being evaluated occupies, measured by the end of the model's evaluation time
+
+"3" or "High Risk": The expected average population density of spotted lanternflies is expected to increase by at least 1,001 to 10,000 individuals, inclusive, per square mile of "flat area" under the previous categories' limitations
+
+"4" or "Severe Risk": The expected average population density of spotted lanternflies is expected to increase by at least 10,001 individuals per square mile of "flat area" under the previous categories' limitations
+----
+Food Production Risk Model:
+
+"0" or "Least Risk": Even the most vulnerable food-producing species are expected to experience only negligible damage to the quality and quantity (by net weight) of their crop yield as a result of spotted lanternflies removing their phloem or causing fungal infection to the plant, specifically within the area being analyzed and for the yield of the year until the end of the evaluation time of the model (2025 or 2026)
+
+"1" or "Low Risk": A noticeable decrease in quality or quantity of food yielded by the end of the evaluation period from species in the analyzed area happens due to spotted lanternflies, but the damage is not expected to affect species grown commercially in the area
+
+"2" or "Moderate Risk": A noticeable decrease in quality or quantity of food yielded by the end of the evaluation period from species in the analyzed area happens due to spotted lanternflies at affects at least one commercially-grown food plant in the analyzed area, but only either the quality of the crop or the quantity (by net weight) could be affected
+
+"3" or "High Risk": Both the quality and quantity of food yielded by the end of the evaluation period for at least one species of commercially-grown food plants in the analyzed area are negatively affected by spotted lanternflies
+----
+Timber Production Risk Model:
+
+"0" or "Least Risk": The presence of spotted lanternflies in the analyzed area for the evaluation time of the model (2025 or 2026), if any, is not expected to have any effect on the volume of usable plant matter for any species grown for timber or paper
+
+"1" or "Low Risk": The presence of spotted lanternflies in the analyzed area for the evaluation time of the model (2025 or 2026), if any, is expected to have a non-negligible effect on the volume of usable plant matter for at least one species grown for timber or paper in the area
+
+"2" or "Moderate Risk": The presence of spotted lanternflies in the analyzed area for the evaluation time of the model (2025 or 2026), if any, is expected to have a non-negligible effect on the volume of usable plant matter for the majority (up to 90\% of the biodiversity) of species grown for timber or paper in the area
+
+"3" or "High Risk": The presence of spotted lanternflies in the analyzed area for the evaluation time of the model (2025 or 2026), if any, is expected to have a non-negligible effect on the volume of usable plant matter for more than 90\% of the biodiversity of species grown for timber or paper in the area
+----
+Ornamental Production Risk Model:
+
+"0" or "Low Risk": Spotted lanternfly parasitism on ornamental plants grown in the area during the evaluation period (2025 or 2026) is not expected to experience any aesthetic damage due to fungal infection
+
+"1" or "Moderate Risk": Spotted lanternfly parasitism on ornamental plants grown in the area during the evaluation period is expected to cause non-negligible aesthetic damage due to fungal infection in at least one species grown in the area
+
+"2" or "High Risk": Spotted lanternfly parasitism on ornamental plants grown in the area during the evaluation period is expected to cause non-negligible aesthetic damage due to fungal infection in at least 50\% of the ornamentally-used species grown in the area
+----
+TL;DR: Each model uses integers in place of string classes for target values with ascending value correlating with greater negative consequences that spotted lanternflies have on local wildlife. There are 5 classes for general risk models, 4 for food and wood production risk models, and 3 for ornamental production risk models.
