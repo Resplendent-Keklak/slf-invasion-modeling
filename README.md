@@ -4,25 +4,31 @@ This repository holds scripts, maps, machine learning models, and other data vis
 ## How to Use This Repository
 Navigating this repository (see next section) will allow you to look at the raw and modified data used in model development, the main public-facing content and easy-to-digest textual information that adds context to the contributors' research in invasive species propagation, and the scripts used to train the models and predict future invasive establishments in the lower 48 United States. We do not have an app, but running the scripts on your own environment will allow you to reproduce the results of this research.
 
+The main contributors are not professional developers, so there are no guarantees that the code and data will make immediate sense to someone who uses high-level programming languages to process data or develop machine learning models. Users who attempt to replicate the results but find that reading data into the programs doesn't work should change the path of the data to match the path where it is added to your own device. If you cannot find the path to the data you desire, the documentation made in the `Deliverables` folder should help you. If this doesn't work, contact a main contributor.
+
+As an additional note, some data files had to be split into smaller files to fit within the file size upload limits set by GitHub. A file split into multiple smaller ones may not be represented in the code, which should be true for the following files:
+
+- `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines.csv` is split into `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_1.csv` and `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_2.csv`
+
 ## Navigating This Repository
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
-- __DataModified:__ data that was processed in a script, exported as some Python-compatible file format, and then stored here
-- __DataRaw:__ files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
-    - __Climate:__ local climatological data provided by the National Oceanic and Atmospheric Administration for certain parts of the United States historically from the beginning of 2014 (2014-01-01) to the end of 2024 (2024-12-31)
-    - __Ecological:__ observational and abundance data provided mainly by ![iNaturalist](https://inaturalist.org/) (with data limited to 2014 to 2024, inclusive) but also by the United States Department of Agriculture
-    - __Geometry:__ map boundary, area, and locational data provided by a variety of sources
-    - __Traffic:__ traffic-related data for primary road/highway usage and railway usage from 2014 to 2024, inclusive, from a variety of sources
-- __Deliverables:__ contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes
-- __Scripts:__ contains ![Jupyter Notebook](https://jupyter.org/) and ![Python](https://www.python.org/) programs that this project used in the development of its results
-    - __Old:__ files that were used in the project but are not necessary for final model and visualization development
-    - __Final:__ all files necessary for model and visualization development except for data
-- __Visualizations:__ contains images showing the results of this research project, mostly as static images in ![.PNG or .JPG format](https://en.wikipedia.org/wiki/Image_file_format)
-    - __MapScreenshots:__ static images of maps
-    - __MapInteractive:__ interactive versions of maps, if possible
-    - __NonMaps:__ any data visualizations that are not displayed geospatially as in points or marks on a map of the lower 48 states
-- __.gitignore:__ the default template containing ![a general list of files to ignore](https://docs.github.com/en/get-started/git-basics/ignoring-files) when cloning the repository; this one uses the template GitHub provided for the ![Python](https://www.python.org/downloads/) language
-- __LICENSE:__ details of the ![MIT License](https://choosealicense.com/licenses/mit/) used to protect this research while giving the ability to the general public to use this repository in almost any way they'd like
-- __README.md:__ this file
+- `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
+- `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
+    - `Climate`: local climatological data provided by the National Oceanic and Atmospheric Administration for certain parts of the United States historically from the beginning of 2014 (2014-01-01) to the end of 2024 (2024-12-31)
+    - `Ecological`: observational and abundance data provided mainly by ![iNaturalist](https://inaturalist.org/) (with data limited to 2014 to 2024, inclusive) but also by the United States Department of Agriculture
+    - `Geometry`: map boundary, area, and locational data provided by a variety of sources
+    - `Traffic`: traffic-related data for primary road/highway usage and railway usage from 2014 to 2024, inclusive, from a variety of sources
+- `Deliverables`: contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes
+- `Scripts`: contains ![Jupyter Notebook](https://jupyter.org/) and ![Python](https://www.python.org/) programs that this project used in the development of its results
+    - `Old`: files that were used in the project but are not necessary for final model and visualization development
+    - `Final`: all files necessary for model and visualization development except for data
+- `Visualizations`: contains images showing the results of this research project, mostly as static images in ![.PNG or .JPG format](https://en.wikipedia.org/wiki/Image_file_format)
+    - `MapScreenshots`: static images of maps
+    - `MapInteractive`: interactive versions of maps, if possible
+    - `NonMaps`: any data visualizations that are not displayed geospatially as in points or marks on a map of the lower 48 states
+- `.gitignore`: the default template containing ![a general list of files to ignore](https://docs.github.com/en/get-started/git-basics/ignoring-files) when cloning the repository; this one uses the template GitHub provided for the ![Python](https://www.python.org/downloads/) language
+- `LICENSE`: details of the ![MIT License](https://choosealicense.com/licenses/mit/) used to protect this research while giving the ability to the general public to use this repository in almost any way they'd like
+- `README.md`: this file
 
 ## Software Used
 The primary investigator ran training, validation, and test data on Jupyter Notebook using Python 3 with some early data processing in R using a fork of ![lydemap](https://github.com/ieco-lab/lydemapr) included as a small section in this repository. 2025-era versions of NumPy, Pandas, and Geopandas were necessary for data processing and computations. Matplotlib, Seaborn, and Shapely were helpful in visualizing data points and trends. Model development outside of data cleaning and pre-processing required Scikitlearn (Sklearn) for decision tree modeling, Keras for neural networks, and TensorFlow for understanding model development fundamentals. While not formally used for this project, the primary investigator ran some data through Maxent.
