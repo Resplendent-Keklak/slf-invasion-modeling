@@ -1,0 +1,98 @@
+Data Dictionary for State-Level Spotted Lanternfly Food Plant Damage Risk Model
+Erica Keklak | 2025-06-25
+----
+FEATURE COLUMNS:
+
+state: the two-letter abbreviation of the state for the county (data type: string; unit: two-letter abbreviation)
+
+year: the four-digit year of risk evaluation per data point (data type: integer; unit: year)
+
+area: the square mileage of land area in the state as a sum of land area in all counties (data type: float; unit: square mile)
+
+border_count: the number of states that share a boundary with each state (data type: integer; unit: counties)
+
+highway_count: number of primary roads lying on the boundary for each state (data type: integer; unit: primary roads)
+
+rail_count: number of train lines lying inside each state (data type: integer; unit: railway lines)
+
+highway_rests_count: total number of all highway rest stops/stations in the state (data type: integer; unit: primary road rest stops)
+
+train_stations_count: total number of all train stations and rail yards in the state (data type: integer; unit: rail stations)
+
+highway_traffic_nymph: average daily traffic of cars and trucks for all daytime hours crossing state boundaries on state highways from April 1 to September 30 (nymph season) (data type: integer; unit: motor vehicles)
+
+highway_traffic_adult: average daily traffic of cars and trucks for all daytime hours crossing state boundaries on state highways from July 1 to November 30 (adult season) (data type: integer; unit: motor vehicles)
+
+highway_traffic_egg: average daily traffic of cars and trucks for all 24 hours of the day crossing state boundaries on state highways from September 1 to June 30 (egg season) (data type: integer; unit: motor vehicles)
+
+rail_traffic_nymph: average daily traffic of rails for all daytime hours crossing state boundaries on state highways from April 1 to September 30 (nymph season) (data type: integer; unit: rail engines)
+
+rail_traffic_adult: average daily traffic of rails for all daytime hours crossing state boundaries on state highways from July 1 to November 30 (adult season) (data type: integer; unit: rail engines)
+
+rail_traffic_egg: average daily traffic of rails for all 24 hours of the day crossing state boundaries on state highways from September 1 to June 30 (egg season) (data type: integer; unit: rail engines)
+
+slf_pop_current: expected or estimated number of individual spotted lanternflies that exist in the state that year (data type: integer; unit: individual spotted lanternflies)
+
+slf_pop_yesteryear: expected or estimated number of individual spotted lanternflies that exist in the state the previous year (data type: integer; unit: individual spotted lanternflies)
+
+expected_nymph_kills: expected or estimated number of times a spotted lanternfly will be killed by a predator in that state that year during nymph season, based on mathematical estimates due to population density of prey, population density of predators, and expected average spotted lanternfly nymphs eaten (data type: integer; unit: individually-killed spotted lanternflies)
+
+expected_adult_kills: expected or estimated number of times a spotted lanternfly will be killed by a predator in that state that year during adult season, based on mathematical estimates due to population density of prey, population density of predators, and expected average spotted lanternfly adults eaten (data type: integer; unit: individually-killed spotted lanternflies)
+
+yield_current: expected or estimated ratio of production of food in the state from host plants in the current year with the basis of 2014 = 1; for example, if the yield for 2015 is double that of 2014, the value for 2015 is 2 (data type: float; unit: food production ratio)
+
+yield_yesteryear: expected or estimated ratio of production of food in the state from host plants in the current year with the basis of 2013 = 1 (data type: float; unit: food production ratio)
+
+expected_food_hosts: expected number of available, known, host plants species and genera that are grown for food production purposes (or naturally grow and have the capacity to produce food) in the state (data type: integer; unit: individual host plants)
+
+host_feeding_surface: expected average surface area per individual plant where spotted lanternflies may feed from hosts in the host plants grown for food (or naturally grow and have the capacity to produce food), based on estimates of relative abundance per host plant and their average feeding surface area, in the state (data type: integer; unit: square centimeter)
+
+daytime_nymph: average duration of daylight plus half of all twilight available during nymph season (data type: integer; unit: minute)
+
+daytime_adult: average duration of daylight plus half of all twilight available during adult season  (data type: integer; unit: minute)
+
+day_temp_egg: average daytime dry bulb temperature during egg season (data type: float; unit: degrees Fahrenheit)
+
+night_temp_egg: average nighttime dry bulb temperature during egg season (data type: float; unit: degrees Fahrenheit)
+
+coldest_temp_egg: least possible/expected dry bulb temperature during egg season (data type: float; unit: degrees Fahrenheit)
+
+day_temp_nymph: average daytime dry bulb temperature during nymph season (data type: float; unit: degrees Fahrenheit)
+
+night_temp_nymph: average nighttime dry bulb temperature during nymph season (data type: float; unit: degrees Fahrenheit)
+
+day_temp_adult: average daytime dry bulb temperature during adult season (data type: float; unit: degrees Fahrenheit)
+
+night_temp_adult: average nighttime dry bulb temperature during adult season (data type: float; unit: degrees Fahrenheit)
+
+day_hum_egg: average daytime humidity during egg season (data type: float; unit: decimal as percent/relative humidity)
+
+night_hum_egg: average nighttime humidity during egg season (data type: float; unit: decimal as percent/relative humidity)
+
+day_hum_nymph: average daytime humidity during nymph season (data type: float; unit: decimal as percent/relative humidity)
+
+night_hum_nymph: average nighttime humidity during nymph season (data type: float; unit: decimal as percent/relative humidity)
+
+day_hum_adult: average daytime humidity during adult season (data type: float; unit: decimal as percent/relative humidity)
+
+night_hum_adult: average nighttime humidity during egg season (data type: float; unit: decimal as percent/relative humidity)
+
+rain_nymph: average daytime rainfall intensity during nymph season (data type: float; unit: inch)
+
+rain_adult: average daytime rainfall intensity during adult season (data type: float; unit: inch)
+
+wind_nymph: average daytime wind speed during nymph season (data type: float; unit: miles per hour)
+
+wind_adult: average daytime wind speed during adult season (data type: float; unit: miles per hour)
+
+geometry: point-based geometric boundaries per state (data type: geometry; unit: coordinate list)
+
+TARGET COLUMNS:
+
+target: an integer-encoded risk class for each state per year for the expected risk of damage to food production plants grown that year (data type: integer; unit: risk level)
+
+----
+
+Changes:
+
+- 2025-06-25: created the original list of features and target values
