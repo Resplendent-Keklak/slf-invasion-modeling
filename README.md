@@ -15,10 +15,14 @@ The original __slf-invasion-modeling__ repository is structured differently from
 - `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
 - `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
     - `Climate`: local climatological data provided by the National Oceanic and Atmospheric Administration for certain parts of the United States historically from the beginning of 2014 (2014-01-01) to the end of 2024 (2024-12-31)
-    - `Ecological`: observational and abundance data provided mainly by ![iNaturalist](https://inaturalist.org/) (with data limited to 2014 to 2024, inclusive) but also by the United States Department of Agriculture
     - `Geometry`: map boundary, area, and locational data provided by a variety of sources
+    - `Hosts`: observations and abundance data for plants evidenced to be hosts of the spotted lanternfly, with observations limited to between 2014 and 2024 that come from iNatualist and the USDA
+    - `Predators`: observations and abundance data for animals evidenced to predate on the spotted lanternfly, with observations limited to between 2014 and 2024 that come from iNatualist and the USDA
+    - `SLFObservations`: observational and abundance data provided mainly by ![iNaturalist](https://inaturalist.org/) (with data limited to 2014 to 2024, inclusive) but also by the United States Department of Agriculture
     - `Traffic`: traffic-related data for primary road/highway usage and railway usage from 2014 to 2024, inclusive, from a variety of sources
 - `Deliverables`: contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes
+    - `During Research`: contains deliverables completed during the May 18 to July 24 research session
+    - `Proposal and Pre-Research`: contains deliverables completed prior to May 18 that were necessary to begin the research
 - `Scripts`: contains ![Jupyter Notebook](https://jupyter.org/) and ![Python](https://www.python.org/) programs that this project used in the development of its results
     - `Old`: files that were used in the project but are not necessary for final model and visualization development
     - `Final`: all files necessary for model and visualization development except for data
