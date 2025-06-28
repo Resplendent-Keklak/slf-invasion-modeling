@@ -8,7 +8,10 @@ The main contributors are not professional developers, so there are no guarantee
 
 As an additional note, some data files had to be split into smaller files to fit within the file size upload limits set by GitHub. A file split into multiple smaller ones may not be represented in the code, which should be true for the following files:
 
-- `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines.csv` is split into `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_1.csv` and `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_2.csv`
+- `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines.csv` is split into `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines_Part_1.csv` and `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines_Part_2.csv`
+- `DataRaw > Predators > Araneus sp Angulate and roundshouldered orbweavers > Araneus_sp_iNaturalist.csv` is split into `DataRaw > Predators > Araneus sp Angulate and roundshouldered orbweavers > Araneus_sp_iNaturalist_Part_1.csv` and `DataRaw > Predators > Araneus sp Angulate and roundshouldered orbweavers > Araneus_sp_iNaturalist_Part_2.csv`
+- `DataRaw > Predators > Phidippus audax Bold jumping spider > Phidippus_audax_iNaturalist.csv` is split into `DataRaw > Predators > Phidippus audax Bold jumping spider > Phidippus_audax_iNaturalist_Part_1.csv` and `DataRaw > Predators > Phidippus audax Bold jumping spider > Phidippus_audax_iNaturalist_Part_2.csv`
+- ...and similar splits for other predators with large numbers of observations (to be listed)
 
 ## Navigating This Repository
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
