@@ -13,7 +13,7 @@ As an additional note, some data files had to be split into smaller files to fit
 ## Navigating This Repository
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
 - `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
-- `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
+- `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included but are not guaranteed for all datasets. Files that were solely modified to be split apart so they can be hosted on GitHub have been added here instead of `DataModified` to allow for both folders to have at least one copy of all the required data and to preserve transparency (help other people track) the sources of data.
     - `Climate`: local climatological data provided by the National Oceanic and Atmospheric Administration for certain parts of the United States historically from the beginning of 2014 (2014-01-01) to the end of 2024 (2024-12-31)
     - `Geometry`: map boundary, area, and locational data provided by a variety of sources
     - `Hosts`: observations and abundance data for plants evidenced to be hosts of the spotted lanternfly, with observations limited to between 2014 and 2024 that come from iNatualist and the USDA
