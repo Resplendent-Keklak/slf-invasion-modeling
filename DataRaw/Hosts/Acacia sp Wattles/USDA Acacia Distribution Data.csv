@@ -1,0 +1,63 @@
+﻿Distribution Data
+Symbol,Country,State,State FIP,County,County FIP
+ACACI,United States,Arizona,04,,
+ACACI,United States,California,06,,
+ACACI,United States,California,06,Alameda,001
+ACACI,United States,California,06,Butte,007
+ACACI,United States,California,06,Colusa,011
+ACACI,United States,California,06,Contra Costa,013
+ACACI,United States,California,06,Glenn,021
+ACACI,United States,California,06,Los Angeles,037
+ACACI,United States,California,06,Marin,041
+ACACI,United States,California,06,Mendocino,045
+ACACI,United States,California,06,Monterey,053
+ACACI,United States,California,06,Napa,055
+ACACI,United States,California,06,Orange,059
+ACACI,United States,California,06,Riverside,065
+ACACI,United States,California,06,Sacramento,067
+ACACI,United States,California,06,San Bernardino,071
+ACACI,United States,California,06,San Diego,073
+ACACI,United States,California,06,San Francisco,075
+ACACI,United States,California,06,San Luis Obispo,079
+ACACI,United States,California,06,San Mateo,081
+ACACI,United States,California,06,Santa Barbara,083
+ACACI,United States,California,06,Santa Clara,085
+ACACI,United States,California,06,Santa Cruz,087
+ACACI,United States,California,06,Shasta,089
+ACACI,United States,California,06,Solano,095
+ACACI,United States,California,06,Sonoma,097
+ACACI,United States,California,06,Stanislaus,099
+ACACI,United States,California,06,Tehama,103
+ACACI,United States,California,06,Trinity,105
+ACACI,United States,California,06,Ventura,111
+ACACI,United States,California,06,Yolo,113
+ACACI,United States,Florida,12,,
+ACACI,United States,Florida,12,Broward,011
+ACACI,United States,Florida,12,Collier,021
+ACACI,United States,Florida,12,Glades,043
+ACACI,United States,Florida,12,Lee,071
+ACACI,United States,Florida,12,Martin,085
+ACACI,United States,Florida,12,Miami-Dade,086
+ACACI,United States,Florida,12,Monroe,087
+ACACI,United States,Florida,12,Palm Beach,099
+ACACI,United States,Hawaii,15,,
+ACACI,United States,Hawaii,15,Hawaii,001
+ACACI,United States,Hawaii,15,Honolulu,003
+ACACI,United States,Hawaii,15,Kauai,007
+ACACI,United States,Hawaii,15,Maui,009
+ACACI,United States,Mississippi,28,,
+ACACI,United States,Mississippi,28,Harrison,047
+ACACI,United States,Oregon,41,,
+ACACI,United States,Oregon,41,Coos,011
+ACACI,United States,Palau,70,,
+ACACI,United States,Palau,70,Aimeliik,002
+ACACI,United States,Palau,70,Airai,004
+ACACI,United States,Palau,70,Koror,150
+ACACI,United States,Palau,70,Melekeok,212
+ACACI,United States,Palau,70,Ngaraard,214
+ACACI,United States,Palau,70,Ngarchelong,218
+ACACI,United States,Palau,70,Ngardmau,222
+ACACI,United States,Palau,70,Ngatpang,224
+ACACI,United States,Palau,70,Ngchesar,226
+ACACI,United States,Palau,70,Ngeremlengui,227
+ACACI,United States,Palau,70,Ngiwal,228
