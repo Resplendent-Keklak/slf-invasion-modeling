@@ -75,5 +75,5 @@ Before preprocessing (encoding, etc.) these are the contents of the general spre
 | geometry    | Shape of territory                        | The shapefile definition of the shape of the area (county or state) of the data point                        | shape geometry               | polygons  |
 
 Note that all population densities are rounded to the nearest individual per square kilometer.
-## Target column
-The __target__ column (labeled `target`) represents the general spread risk value for its associated row or data point's county or state. See other documents in the `Deliverables > During Research` folder for a list of target value meanings
+## Target Column
+The __target__ column (labeled `target`) represents the general spread risk value for its associated row or data point's county or state. See other documents in the `Deliverables > During Research` folder for a list of target value meanings. One of the most specific documents is at ![Spotted Lanternfly Modeling Classes](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/e59816d8e070321e3f026b1b70a26c2d4370aa7e/Deliverables/During%20Research/Spotted%20Lanternfly%20Risk%20Modeling%20Classes.txt).
