@@ -19,7 +19,7 @@ The original __slf-invasion-modeling__ repository is structured differently from
     - `Geometry`: map boundary, area, and locational data provided by a variety of sources
     - `Traffic`: traffic-related data for primary road/highway usage and railway usage from 2014 to 2024, inclusive, from a variety of sources
 - `Deliverables`: contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes
-    - `During Research`: deliverables the contributors had to submit for program requirements following entry into the program. Many are visually interesting
+    - `During Research`: deliverables the contributors had to submit for program requirements following entry into the program. Many are visually interesting, and ![one of them even documents my process in detail](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/969d8e6c79604fdf3d27f57e38cdec4baaf16000/Deliverables/During%20Research/Data%20Processing%20Workflow.md)
     - `Proposal and Pre-Research`: deliverables submitted before acceptance into the program. It contains a ![poster](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/191a0aad9241d99df159d9b97c8e53a39aabbcfe/Deliverables/Proposal%20and%20Pre-Research/HIRF%202025%20Poster%20Erica%20Keklak%20Spotted%20Lanternfly%20Spread%20Predictive%20Model.pdf)
 - `Scripts`: contains ![Jupyter Notebook](https://jupyter.org/) and ![Python](https://www.python.org/) programs that this project used in the development of its results
     - `Old`: files that were used in the project but are not necessary for final model and visualization development; some larger files had to be omitted
