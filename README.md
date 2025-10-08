@@ -1,4 +1,5 @@
 # slf-invasion-modeling
+
 This repository holds scripts, maps, machine learning models, and other data visualizations related to a Summer 2025 ![NJIT Provost Undergraduate Research and Innovation (URI) fellowship](https://research.njit.edu/uri/summer-research-programs) with the project formally named "Predictive model of the spread of the spotted lanternfly in the continental United States using machine learning." The fellowship, and therefore updates to the repository, conclude on July 24, 2025, but the repository will be available and public for several years. This project is intended to process historical data on the amount of reported observations of the ![introducted population of the spotted lanternfly (_Lycorma delicatula_)](https://www.aphis.usda.gov/plant-pests-diseases/slf) and use classification-based machine learning techniques to predict the propagation of the invasion in certain areas of the continental United States. While the full write-up of this project and the deliverables for the fellowship should be available on this repository, the project is not subject to formal peer review and its results will likely not be published in a journal.
 
 ## How to Use This Repository
@@ -11,6 +12,8 @@ As an additional note, some data files had to be split into smaller files to fit
 - `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines.csv` is split into `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_1.csv` and `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_2.csv`
 
 ## Navigating This Repository
+__Note: this repository is going to undergo major changes to the structure of its subdirectories soon! Navigating the repository might be difficult after the changes are made, but there will be an explainer file uploaded to the repository following the changes.__
+
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
 - `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
 - `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
