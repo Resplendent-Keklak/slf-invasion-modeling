@@ -1,4 +1,5 @@
 # slf-invasion-modeling
+
 This repository holds scripts, maps, machine learning models, and other data visualizations related to a Summer 2025 ![NJIT Provost Undergraduate Research and Innovation (URI) fellowship](https://research.njit.edu/uri/summer-research-programs) with the project formally named "Predictive model of the spread of the spotted lanternfly in the continental United States using machine learning." The fellowship, and therefore updates to the repository, conclude on July 24, 2025, but the repository will be available and public for several years. This project is intended to process historical data on the amount of reported observations of the ![introducted population of the spotted lanternfly (_Lycorma delicatula_)](https://www.aphis.usda.gov/plant-pests-diseases/slf) and use classification-based machine learning techniques to predict the propagation of the invasion in certain areas of the continental United States. While the full write-up of this project and the deliverables for the fellowship should be available on this repository, the project is not subject to formal peer review and its results will likely not be published in a journal.
 
 ## How to Use This Repository
@@ -11,6 +12,8 @@ As an additional note, some data files had to be split into smaller files to fit
 - `DataRaw > Traffic > NTAD_North_American_Rail_Network_Lines.csv` is split into `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_1.csv` and `DataModified > Traffic > NTAD_North_American_Rail_Network_Lines_Part_2.csv`
 
 ## Navigating This Repository
+__Note: this repository is going to undergo major changes to the structure of its subdirectories soon! Navigating the repository might be difficult after the changes are made, but there will be an explainer file uploaded to the repository following the changes.__
+
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
 - `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
 - `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
@@ -19,9 +22,11 @@ The original __slf-invasion-modeling__ repository is structured differently from
     - `Geometry`: map boundary, area, and locational data provided by a variety of sources
     - `Traffic`: traffic-related data for primary road/highway usage and railway usage from 2014 to 2024, inclusive, from a variety of sources
 - `Deliverables`: contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes
+    - `During Research`: deliverables the contributors had to submit for program requirements following entry into the program. Many are visually interesting, and ![one of them even documents my process in detail](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/969d8e6c79604fdf3d27f57e38cdec4baaf16000/Deliverables/During%20Research/Data%20Processing%20Workflow.md)
+    - `Proposal and Pre-Research`: deliverables submitted before acceptance into the program. It contains a ![poster](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/191a0aad9241d99df159d9b97c8e53a39aabbcfe/Deliverables/Proposal%20and%20Pre-Research/HIRF%202025%20Poster%20Erica%20Keklak%20Spotted%20Lanternfly%20Spread%20Predictive%20Model.pdf)
 - `Scripts`: contains ![Jupyter Notebook](https://jupyter.org/) and ![Python](https://www.python.org/) programs that this project used in the development of its results
-    - `Old`: files that were used in the project but are not necessary for final model and visualization development
-    - `Final`: all files necessary for model and visualization development except for data
+    - `Old`: files that were used in the project but are not necessary for final model and visualization development; some larger files had to be omitted
+    - `Final`: all files necessary for model and visualization development except for data; if this folder is empty for some reason, see the contents in `Old`
 - `Visualizations`: contains images showing the results of this research project, mostly as static images in ![.PNG or .JPG format](https://en.wikipedia.org/wiki/Image_file_format)
     - `MapScreenshots`: static images of maps
     - `MapInteractive`: interactive versions of maps, if possible
@@ -31,11 +36,13 @@ The original __slf-invasion-modeling__ repository is structured differently from
 - `README.md`: this file
 
 ## Software Used
-The primary investigator ran training, validation, and test data on Jupyter Notebook using Python 3 with some early data processing in R using a fork of ![lydemap](https://github.com/ieco-lab/lydemapr) included as a small section in this repository. 2025-era versions of NumPy, Pandas, and Geopandas were necessary for data processing and computations. Matplotlib, Seaborn, and Shapely were helpful in visualizing data points and trends. Model development outside of data cleaning and pre-processing required Scikitlearn (Sklearn) for decision tree modeling, Keras for neural networks, and TensorFlow for understanding model development fundamentals. While not formally used for this project, the primary investigator ran some data through Maxent.
+The primary investigator ran training, validation, and test data on Jupyter Notebook using Python 3 with some early data processing in R using a fork of ![lydemap](https://github.com/ieco-lab/lydemapr) included as a small section in this repository. 2025-era versions of NumPy, Pandas, and Geopandas were necessary for data processing and computations. Matplotlib, Seaborn, and Shapely were helpful in visualizing data points and trends. Model development outside of data cleaning and pre-processing required Scikitlearn (Sklearn) for decision tree modeling, Keras for neural networks, and TensorFlow for understanding model development fundamentals. While not formally used for this project, the primary investigator ran some data through MaxEnt.
 
 __TL;DR:__
-- _Languages/Main Ware:_ ![Conda](https://anaconda.org/anaconda/conda), ![Jupyter Notebook](https://jupyter.org/), ![Python](https://www.python.org/), ![R](https://www.r-project.org/), ![RStudio](https://posit.co/downloads/), ![Maxent](https://biodiversityinformatics.amnh.org/open_source/maxent/)
-- _Packages and Libraries:_ ![NumPy](https://numpy.org/), ![Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html), ![Geopandas](https://geopandas.org/en/stable/), ![Matplotlib](https://matplotlib.org/), ![Seaborn](https://seaborn.pydata.org/), ![Shapely](https://shapely.readthedocs.io/en/stable/manual.html), ![Sklearn](https://scikit-learn.org/stable/index.html), ![Keras](https://keras.io/), ![TensorFlow](https://www.tensorflow.org/)
+- _Languages/Main Software:_ ![Conda](https://anaconda.org/anaconda/conda), ![Jupyter Notebook](https://jupyter.org/), ![Python](https://www.python.org/), ![R](https://www.r-project.org/), ![RStudio](https://posit.co/downloads/), ![MaxEnt](https://biodiversityinformatics.amnh.org/open_source/maxent/)
+- _Utility Modules:_ ![NumPy](https://numpy.org/), ![Math](https://docs.python.org/3/library/math.html), ![Random](https://docs.python.org/3/library/random.html), ![Statistics](https://docs.python.org/3/library/statistics.html), ![Datetime](https://docs.python.org/3/library/datetime.html)
+- _Data/Model Processing Modules:_ ![Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html), ![Geopandas](https://geopandas.org/en/stable/), ![Sklearn](https://scikit-learn.org/stable/index.html), ![Pickle](https://docs.python.org/3/library/pickle.html)
+- _Data Visualization Modules:_ ![Matplotlib](https://matplotlib.org/), ![Seaborn](https://seaborn.pydata.org/), ![Shapely](https://shapely.readthedocs.io/en/stable/manual.html)
 
 ## Frequently-Asked Questions (FAQs)
 ### _What can the average American gain from this project?_
@@ -74,7 +81,7 @@ Classification modeling is the process of using existing data, that may or may n
 
 ### _Q: Where are your sources/works cited?_
 
-The proposal and active citation list is available for review in the __Deliverables__ folder and may span several files. Some files have annotations about the reasons why sources were used and whether or not they have been cited at certain stages of the project's development.
+The main citation list/references file is in ![a PDF found in the "during research" subdirectory of the Deliverables folder](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/f3a37185bf883f109e1787498c0e383693834cb0/Deliverables/During%20Research/Erica%20Keklak%20URI%20GHRI%202025%20Project%20References.pdf). The proposal and active citation list is available for review in the __Deliverables__ folder and may span several files. Some files have annotations about the reasons why sources were used and whether or not they have been cited at certain stages of the project's development.
 
 ## Contributing
 If you would like to contribute to the development of this project, you can:
