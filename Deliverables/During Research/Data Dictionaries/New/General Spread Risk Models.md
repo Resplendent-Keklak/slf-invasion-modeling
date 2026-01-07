@@ -152,8 +152,8 @@ Now to show the allocation of data columns for each model type. To reduce redund
 | wind_adult  | All models                  | Strongly encouraged        | Strongly encouraged        | WIP                   |
 | pred_dvsty  | All models                  | Strongly encouraged        | Strongly encouraged        | WIP                   |
 | pred_dnsty  | All models                  | Strongly encouraged        | Strongly encouraged        | WIP                   |
-| year        | All models                  | Mandatory | Completely processed |
-| geometry    | No/dropped before training  | Never used | Completely processed |
+| year        | All models                  | Mandatory                  | Mandatory                  | Completely processed  |
+| geometry    | No/dropped before training  | Never used                 | Never used                 | Completely processed  |
 
 ## Target Column
 
