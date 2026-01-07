@@ -1,11 +1,14 @@
 # Data Dictionary for General Spread Risk Models
 
 __Erica Keklak__ | 2026-01-07
+
 For the general spread risk assessment using models created in mid-August 2025 and beyond this document represents training data processed in both county and state levels.
 
 ## Feature Columns
 
 Before preprocessing (encoding, etc.) these are the contents of the general spread risk training data excluding target values. For space limitations set by the GeoPandas library, column names only get saved if they occupy ten characters each. The software truncates longer ones, so I tried to keep each as brief as possible. GitHub also doesn't allow for very wide tables, so I could not show which data is included in each model in the first one. To find which data is allocated to each type of model, see the subsequent table.
+
+Keep in mind that almost all data columns have values dependent on whether or not the data is aggregated by counties or by states, so the exact values vary between "county models" and "state models" as well. Within these two levels of granularity, the values should be equivalent because no new data was introduced.
 
 | Column Name |               Basic Meaning               |                                                Representation                                                |             Unit             | Data Type |
 |-------------|-------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------|-----------|
