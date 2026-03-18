@@ -16,21 +16,21 @@ __Note: this repository is going to undergo major changes to the structure of it
 
 The original __slf-invasion-modeling__ repository is structured differently from the standard research directory because it is not self-hosted:
 - `DataModified`: data that was processed in a script, exported as some Python-compatible file format, and then stored here
-- `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included
-    - `Climate`: __to be removed__; local climatological data provided by the National Oceanic and Atmospheric Administration for certain parts of the United States historically from the beginning of 2014 (2014-01-01) to the end of 2024 (2024-12-31)
+- `DataRaw`: files and subfolders of raw data collected from free, public and/or open sources that were modified, send to the DataModified folder, and used in model and data visualization creation; data dictionaries for some raw data are included. Climatological and traffic data are not available here.
     - `Ecological`: observational (sightings) and abundance data provided mainly by ![iNaturalist](https://inaturalist.org/) (with data limited to 2014 to 2024, inclusive) but also by the United States Department of Agriculture
-    - `Geometry`: map boundary, area, and locational data provided by a variety of sources; __some data files will be removed__
-    - `Traffic`: __to be removed__; traffic-related data for primary road/highway usage and railway usage from 2014 to 2024, inclusive, from a variety of sources
-- `Deliverables`: contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes
+    - `Geometry`: map boundary, area, and locational data provided by a variety of sources; some geometry files are not available.4
+    - `SLFObservations`: some observational data of _L. delicatula_ that were extracted shortly before the first models were fitted; these will be merged into the `Ecological` subdirectory soon
+- `Deliverables`: contains copies of deliverables submitted to the URI team as well as major "non-programmed" parts of the research process, including notes. There is an ![additional file copied from the National Science Foundation](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/303b662338f559a0e095cb5e4b270ff9721ee5fc/Deliverables/TEMPLATE%20Data%20Management%20Plan_NSF_MCA_2.22.2025.docx) detailing a template data management plan that this research does not follow but is modeled after and is provided for future reference.
+    - `2025 Proposal Era`: deliverables submitted before acceptance into the 2025 URI program. It contains a ![poster](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/191a0aad9241d99df159d9b97c8e53a39aabbcfe/Deliverables/Proposal%20and%20Pre-Research/HIRF%202025%20Poster%20Erica%20Keklak%20Spotted%20Lanternfly%20Spread%20Predictive%20Model.pdf)
+    - `2026 Propsal Era`: deliverables submitted before any decisions were made about 2026 research programs that are calling for proposals.
     - `During Research`: deliverables the contributors had to submit for program requirements following entry into the program. Many are visually interesting, and ![one of them even documents my process in detail](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/969d8e6c79604fdf3d27f57e38cdec4baaf16000/Deliverables/During%20Research/Data%20Processing%20Workflow.md)
-    - `Proposal and Pre-Research`: deliverables submitted before acceptance into the program. It contains a ![poster](https://github.com/Resplendent-Keklak/slf-invasion-modeling/blob/191a0aad9241d99df159d9b97c8e53a39aabbcfe/Deliverables/Proposal%20and%20Pre-Research/HIRF%202025%20Poster%20Erica%20Keklak%20Spotted%20Lanternfly%20Spread%20Predictive%20Model.pdf)
 - `Scripts`: contains ![Jupyter Notebook](https://jupyter.org/) and ![Python](https://www.python.org/) programs that this project used in the development of its results
     - `Old`: files that were used in the project but are not necessary for final model and visualization development; some larger files had to be omitted
     - `Final`: all files necessary for model and visualization development except for data; if this folder is empty for some reason, see the contents in `Old`
 - `Visualizations`: contains images showing the results of this research project, mostly as static images in ![.PNG or .JPG format](https://en.wikipedia.org/wiki/Image_file_format)
-    - `MapScreenshots`: static images of maps
-    - `MapInteractive`: interactive versions of maps, if possible
-    - `NonMaps`: any data visualizations that are not displayed geospatially as in points or marks on a map of the lower 48 states
+    - `MapScreenshots`: static images of maps; to be uploaded
+    - `MapInteractive`: interactive versions of maps, if possible; to be uploaded
+    - `NonMaps`: any data visualizations that are not displayed geospatially as in points or marks on a map of the lower 48 states; to be uploaded
 - `.gitignore`: the default template containing ![a general list of files to ignore](https://docs.github.com/en/get-started/git-basics/ignoring-files) when cloning the repository; this one uses the template GitHub provided for the ![Python](https://www.python.org/downloads/) language
 - `LICENSE`: details of the ![MIT License](https://choosealicense.com/licenses/mit/) used to protect this research while giving the ability to the general public to use this repository in almost any way they'd like
 - `README.md`: this file
