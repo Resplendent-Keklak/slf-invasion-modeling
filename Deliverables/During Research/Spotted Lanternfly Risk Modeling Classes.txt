@@ -1,11 +1,13 @@
 Spotted Lanternfly Risk Modeling Classes
-Erica Keklak | 2025-06-25
+Erica Keklak | 2026-01-07
 ----
-Each of the eight main models produced in this project uses a unique set of target values with different meanings although all are added into the training data as "apparently meaningless" integers. However, each classification model has its own meanings for each risk class. Each were assigned algorithmically using an assignment function in Python within one of the Jupyter Notebook files that took into account actual observed data, and almost all of these data are included as features of each model.
+Each of the main models produced in this project uses a unique set of target values with different meanings although all are added into the training data as "apparently meaningless" integers. However, each classification model has its own meanings for each risk class. Each were assigned algorithmically using an assignment function in Python within one of the Jupyter Notebook files that took into account actual observed data, and almost all of these data are included as features of each model.
 
 "Evaluation times" refer to the current year at a certain data point where the target applies; for example, if a row in the training data lists 'year' as 2016 the target value applies to the risk/damage assessed that year. Some of the previous year's data is included because during feature selection a naive time series model was found to be useful in theory.
 
 Model training data does not include predictions for the years of 2025 and 2026 that were proposed. Instead, they will be displayed as results in other deliverables since they represent predictions rather than new, 100% accurate training data. If a contributor decides to take additional data for the years of 2025 and 2026 that are actual future observations, adding them to a fork of this repository's training data could be useful.
+
+The class definitions are subject to change! The publication has the correct values.
 ----
 General Spotted Lanternfly Spread Risk Models:
 
@@ -47,4 +49,5 @@ Ornamental Production Risk Model:
 
 "2" or "High Risk": Spotted lanternfly parasitism on ornamental plants grown in the area during the evaluation period is expected to cause non-negligible aesthetic damage due to fungal infection in at least 50\% of the ornamentally-used species grown in the area
 ----
+
 TL;DR: Each model uses integers in place of string classes for target values with ascending value correlating with greater negative consequences that spotted lanternflies have on local wildlife. There are 5 classes for general risk models, 4 for food and wood production risk models, and 3 for ornamental production risk models.
