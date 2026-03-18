@@ -16,10 +16,21 @@ As with every machine learning project, a developer has to:
 12. Communicating to other people what the predictions mean; this can look very different between projects because it depends on the project's current goals or long-term mission
 ## My Current Workflow
 Given what I described in the steps above, here is what my current workflow looks like in developing models:
-_to be completed_
-## My Old Workflow
-Here's what I remember doing in this project and in other model development projects before I got wise:
-_to be completed_
+1. Download the data or use an API to then download handle data that is required.
+2. Process each category of data in a separate Jupyter Notebook, adding training data columns as I progress. For these models, I started by processing the geoetry data in `Process Geometry Data.ipynb` because it contained the framework for the DataFrame I wanted to construct and export as training data. Next, I processed observation data (sightings) of spotted lanternflies within `Processing SLF Observation Data.ipynb`. I also (attempted to) process host plant data in `Processing Host Plant Data.ipynb`, climatological data in `Processing Local Climatological Data.ipynb`, predator data in  `Processing Predator Data.ipynb`, and traffic data in `Processing Traffic Data.ipynb`.
+3. Once I had a sufficient amount of columns to satisfy a basic model, I added the target classes for each type of model I wanted to construct in `Adding Target Classes.ipynb`.
+4. To train/fit the models, I made some iterations of the multi-layer perceptrons and random forest decision trees within several files: . They are currently a soup, so I will have to separate them out into multiple files that each train separate categories of model in equal amounts. I then use exported the fitted models so I can use them in other notebooks.
+5. When I was ready to make predictions with the fitted models, I did so in `Model Predictions for 2025 and 2026.ipynb`.
+6. To develop my data visualizations and maps, I did so in `Data Visualizations and Mapping.ipynb`.
+
+I stopped using the `Data Processing and Exporting Modified Data.ipynb` months before July 2025 because it was getting quite lengthy, and I had to split up the data manipulation into multiple files.
 ## My Future Workflow
 Now that I know a little more about model development from participating in this project, here's what I want my model development workflows to look like in the future. Maximizing time efficiency is very important, and skipping steps slows down my progress towards delivering high-quality predictions:
+1. Keep outdated raw data with new data, keeping copies of the old ones developed for the July 2025 symposium so they remain reproducible. I will use different paths when importing raw data files into notebooks to represent those that I changed because they were outdated.
+2. Process data in the same categories.
+3. Still use `Adding Target Classes.ipynb` to assign target classes.
+4. _Where I train and fit the models is still being worked out._
+5. Make predictions using the models in `Model Predictions for 2025 and 2026.ipynb` as normal.
+6. Make data visualizations using the models in `Data Visualizations and Mapping.ipynb` as normal.
+
 _to be completed_
