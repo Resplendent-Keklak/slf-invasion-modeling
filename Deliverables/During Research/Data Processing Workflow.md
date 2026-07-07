@@ -4,7 +4,7 @@ I thought it would be helpful for other users to understand how I gradually intr
 ## Main Steps
 As with every machine learning project, a developer has to:
 1. Decide the purpose of their model(s)
-2. Decide appropriate data sources for the model given what predictors are used in literature/observation to have a correlative or causative effect on the resulting target value(s), data availability, and copyright
+2. Decide appropriate data sources for the model given what predictors are used in literature/observation to have a correlative or causative effect on the resulting target value(s), data availability, and copyright (especially in the case of viral licenses)
 4. Decide the best type of model to use given the data they think they want to collect (as training data) and the math the model performs when fitting and predicting (classification, regression, etc.)
 5. Collect data (overlaps in some aspects with the next few steps because model developers like me often have to find more sources if there is insufficient data or replace sources when after looking through the characteristics of the data provided we realize that it doesn't actually provide the data we want)
 6. Data cleaning (removing unnecessary or incomprehensible columns, especially if no data dictionary was provided; automatically or manually, _often manually given the quality of data type inference tools on Python as of late_, assigning data types to columns; removing data points with crucial data missing; converting units when they are unreasonable or inappropriate for the models being developed; and other things). Sometimes data cleaning extends to dealing with log data taken at inconsistent times and with many rows having information that needs to be copied across others that have missing data.
@@ -17,7 +17,13 @@ As with every machine learning project, a developer has to:
 ## My Current Workflow
 Given what I described in the steps above, here is what my current workflow looks like in developing models:
 1. Download the data or use an API to then download handle data that is required.
-2. Process each category of data in a separate Jupyter Notebook, adding training data columns as I progress. For these models, I started by processing the geoetry data in `Process Geometry Data.ipynb` because it contained the framework for the DataFrame I wanted to construct and export as training data. Next, I processed observation data (sightings) of spotted lanternflies within `Processing SLF Observation Data.ipynb`. I also (attempted to) process host plant data in `Processing Host Plant Data.ipynb`, climatological data in `Processing Local Climatological Data.ipynb`, predator data in  `Processing Predator Data.ipynb`, and traffic data in `Processing Traffic Data.ipynb`.
+2. Process each category of data in a separate Jupyter Notebook, adding training data columns as I progress. For these models, I go in the following order:
+    1. geometry data in `Process Geometry Data.ipynb` because it contained the framework for the DataFrame I wanted to construct and export as training data
+    2. observation data (sightings) of spotted lanternflies within `Processing SLF Observation Data.ipynb`
+    3. (attempted) host plant data in `Processing Host Plant Data.ipynb`
+    4. (attempted) climatological data in `Processing Local Climatological Data.ipynb`
+    5. (attempted) predator observation data in  `Processing Predator Data.ipynb`
+    6. (attempted) traffic data in `Processing Traffic Data.ipynb`
 3. Once I had a sufficient amount of columns to satisfy a basic model, I added the target classes for each type of model I wanted to construct in `Adding Target Classes.ipynb`.
 4. To train/fit the models, I made some iterations of the multi-layer perceptrons and random forest decision trees within several files: . They are currently a soup, so I will have to separate them out into multiple files that each train separate categories of model in equal amounts. I then use exported the fitted models so I can use them in other notebooks.
 5. When I was ready to make predictions with the fitted models, I did so in `Model Predictions for 2025 and 2026.ipynb`.
